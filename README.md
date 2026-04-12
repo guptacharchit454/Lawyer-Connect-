@@ -19,10 +19,7 @@ A comprehensive, production-ready web application designed for lawyers to manage
 
 - **Frontend**: React 18 + TypeScript + Vite
 - **Styling**: Tailwind CSS
-- **Database**: Supabase (PostgreSQL)
-- **Authentication**: Supabase Auth
-- **Real-time**: Supabase Realtime
-- **Storage**: Supabase Storage
+- **Database**:  SQL
 - **Icons**: Lucide React
 
 ## Quick Start
@@ -30,8 +27,7 @@ A comprehensive, production-ready web application designed for lawyers to manage
 ### Prerequisites
 
 - Node.js 18+ installed
-- Supabase account
-- npm or yarn
+- 
 
 ### Installation
 
