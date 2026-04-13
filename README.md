@@ -42,14 +42,10 @@ cd lawyer-app
 npm install
 ```
 
-3. Create a `.env` file in the root directory:
-```env
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
 
-4. Set up Supabase:
-   - Create a new Supabase project
+
+4. Set up Database:
+   - Create a new Database project
    - Run the database migration (see Database Setup below)
    - Create storage bucket named `lawyer-documents`
    - Add folders: `id-proofs`, `enrollment-certificates`, `case-docs`
@@ -63,7 +59,7 @@ The application will open at `http://localhost:5173`
 
 ### Database Setup
 
-1. Go to your Supabase project dashboard
+1. Go to your Database project dashboard
 2. Navigate to SQL Editor
 3. Copy the migration SQL from the migration that was applied during development
 4. Execute the SQL to create all tables and policies
@@ -91,7 +87,7 @@ src/
 ├── contexts/            # React contexts
 │   └── AuthContext.tsx  # Authentication context
 ├── lib/                 # Library configurations
-│   ├── supabase.ts      # Supabase client
+│   ├── localdb.ts       # Database client
 │   └── database.types.ts # TypeScript types
 ├── pages/               # Page components
 │   └── LandingPage.tsx  # Landing page
