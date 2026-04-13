@@ -42,15 +42,13 @@ cd lawyer-app
 npm install
 ```
 
-
-
-4. Set up Database:
+3. Set up Database:
    - Create a new Database project
    - Run the database migration (see Database Setup below)
    - Create storage bucket named `lawyer-documents`
    - Add folders: `id-proofs`, `enrollment-certificates`, `case-docs`
 
-5. Start the development server:
+4. Start the development server:
 ```bash
 npm run dev
 ```
@@ -150,12 +148,7 @@ All tables have Row-Level Security (RLS) enabled.
 - Input validation
 - HTTPS recommended for production
 
-## Environment Variables
 
-| Variable | Description |
-|----------|-------------|
-| `VITE_SUPABASE_URL` | Your Supabase project URL |
-| `VITE_SUPABASE_ANON_KEY` | Your Supabase anonymous key |
 
 ## Available Scripts
 
@@ -207,10 +200,6 @@ To test verification status:
 
 ## Troubleshooting
 
-### Database Connection Issues
-- Verify your Supabase URL and anon key
-- Check if your IP is allowed in Supabase settings
-- Ensure database is not paused
 
 ### Build Errors
 - Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
@@ -247,15 +236,10 @@ For issues and questions:
 
 ## License
 
-Copyright © 2024. All rights reserved.
+Copyright © 2025. All rights reserved.
 
-## Acknowledgments
 
-- React Team
-- Supabase Team
-- Tailwind CSS Team
-- Lucide Icons Team
 
 ---
 
-**Note**: This application is designed to work alongside a client-side application. Both applications share the same Supabase database and real-time features enable seamless communication between lawyers and clients.
+**Note**: This application is designed to work alongside a client-side application. Both applications share the same  database and real-time features enable seamless communication between lawyers and clients.
